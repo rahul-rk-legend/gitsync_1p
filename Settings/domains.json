@@ -1,0 +1,10 @@
+[
+    {
+        "alias": "projects/project/locations/location/instances/instance/internalDomains/1",
+        "id": 1,
+        "domain": "Testing",
+        "environments": "[\"Default Environment\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    }
+]
