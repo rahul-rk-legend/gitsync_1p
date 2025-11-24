@@ -1,1 +1,9 @@
-{}
+[
+    {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/1",
+        "id": 1,
+        "displayName": "Testing Dynamic",
+        "parameterType": "String",
+        "defaultValue": "Testing"
+    }
+]
