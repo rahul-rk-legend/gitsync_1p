@@ -16,7 +16,7 @@
     "categoryId": 2,
     "originalPlaybookIdentifier": "263abe37-80b5-4ba3-b16e-561d58c3f4e9",
     "creationTimeUnixTimeInMs": 1764056486117,
-    "modificationTimeUnixTimeInMs": 1764056486117,
+    "modificationTimeUnixTimeInMs": 1764058375832,
     "trigger": {
         "id": 0,
         "identifier": "ea29a707-6f29-48dc-b02d-1e8221bc1185",
@@ -177,8 +177,8 @@
                     "isTouchedByAi": false,
                     "startLoopStepIdentifier": null,
                     "id": 0,
-                    "creationTimeUnixTimeInMs": 1764056486117,
-                    "modificationTimeUnixTimeInMs": 1764056486117,
+                    "creationTimeUnixTimeInMs": 1764058375749,
+                    "modificationTimeUnixTimeInMs": 1764058375832,
                     "additionalProperties": {}
                 },
                 {
@@ -325,8 +325,8 @@
                     "isTouchedByAi": false,
                     "startLoopStepIdentifier": null,
                     "id": 0,
-                    "creationTimeUnixTimeInMs": 1764056486117,
-                    "modificationTimeUnixTimeInMs": 1764056486117,
+                    "creationTimeUnixTimeInMs": 1764058375749,
+                    "modificationTimeUnixTimeInMs": 1764058375832,
                     "additionalProperties": {}
                 }
             ],
@@ -350,8 +350,157 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1764056486117,
-            "modificationTimeUnixTimeInMs": 1764056486117,
+            "creationTimeUnixTimeInMs": 1764058375749,
+            "modificationTimeUnixTimeInMs": 1764058375832,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "52ee5657-8eb5-45ad-868f-7e1be4816d35",
+            "originalStepIdentifier": "52ee5657-8eb5-45ad-868f-7e1be4816d35",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "Siemplify_Get Case Details_1",
+            "name": "Siemplify_Get Case Details",
+            "integration": "Siemplify",
+            "description": "This action will get all the data from a case and return a JSON result.  The result includes comments, entity information, insights, playbooks that ran, alert information and events.",
+            "actionProvider": "Scripts",
+            "actionName": "Siemplify_Get Case Details",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "f52cd528-990a-4cc5-9892-625911f4030b",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {},
+                    "FallbackInstanceDisplayName": "Siemplify_1"
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "Siemplify_Get Case Details",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Case Id\":\"1\",\"Fields to Return\":\"\",\"Nested Keys Delimiter\":\".\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "263abe37-80b5-4ba3-b16e-561d58c3f4e9",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1764058375832,
+            "modificationTimeUnixTimeInMs": 1764058375832,
             "additionalProperties": {}
         },
         {
@@ -499,8 +648,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1764056486117,
-            "modificationTimeUnixTimeInMs": 1764056486117,
+            "creationTimeUnixTimeInMs": 1764058375749,
+            "modificationTimeUnixTimeInMs": 1764058375832,
             "additionalProperties": {}
         },
         {
@@ -614,12 +763,18 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1764056486117,
-            "modificationTimeUnixTimeInMs": 1764056486117,
+            "creationTimeUnixTimeInMs": 1764058375749,
+            "modificationTimeUnixTimeInMs": 1764058375832,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
+        {
+            "condition": "",
+            "fromStep": "5defa7b1-cc91-463a-bf9e-38438c0d9576",
+            "toStep": "52ee5657-8eb5-45ad-868f-7e1be4816d35",
+            "destinationActionStatus": 0
+        },
         {
             "condition": "",
             "fromStep": "6fd9f54b-4230-4e69-a6a9-72f17219122d",

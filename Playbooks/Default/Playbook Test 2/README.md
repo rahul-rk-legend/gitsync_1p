@@ -30,8 +30,10 @@
 |---------|-----------|-----------|---------------|
 |MicrosoftGraphMailDelegated_Send Email_1|Use the Send Email action to send emails from a specific mailbox to an arbitrary list of recipients. This action can send either plain text or HTML-formatted emails. With appropriate permissions, the action can send emails from a mailbox different than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.|MicrosoftGraphMailDelegated|Send Email|
 |Siemplify_Case Comment_1|Add a comment to the case the current alert has been grouped to|Siemplify|Case Comment|
+|Siemplify_Get Case Alerts_1|Use the "Get Case Alerts" action to retrieve alerts related to the case.|Siemplify|Get Case Alerts|
 
 ### Involved Blocks
 |Name|Description|
 |----|-----------|
 |Block 1|An embedded workflow that can receive inputs and return an output.|
+Adding a readme addon

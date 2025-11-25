@@ -4,7 +4,11 @@
         "Integration": {},
         "Mappings": {},
         "Visual Family": {},
-        "Playbook": {},
+        "Playbook": {
+            "Playbook Test 1": "Adding a readme addon",
+            "Playbook Test 2": "Adding a readme addon",
+            "Playbook Test 3": "Adding a readme addon"
+        },
         "Connector": {},
         "Job": {}
     },

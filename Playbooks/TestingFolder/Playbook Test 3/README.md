@@ -30,9 +30,11 @@
 |---------|-----------|-----------|---------------|
 |Siemplify_Assign Case_1|Assign case to specific user or usergroup|Siemplify|Assign Case|
 |Siemplify_Case Tag_1|Add given tag to the case the current alert is grouped to|Siemplify|Case Tag|
+|Siemplify_Get Case Details_1|This action will get all the data from a case and return a JSON result.  The result includes comments, entity information, insights, playbooks that ran, alert information and events.|Siemplify|Get Case Details|
 |Siemplify_Add Entity Insight_1|Add an insight configurable message to each targeted entity|Siemplify|Add Entity Insight|
 
 ### Involved Blocks
 |Name|Description|
 |----|-----------|
 |Block 1|An embedded workflow that can receive inputs and return an output.|
+Adding a readme addon
