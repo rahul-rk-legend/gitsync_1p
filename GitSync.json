@@ -10,7 +10,10 @@
             "MicrosoftGraphMailDelegated,VirusTotalV3": "Adding a readme addon",
             "MicrosoftGraphMailDelegated": "Adding a readme addon"
         },
-        "Visual Family": {},
+        "Visual Family": {
+            "Testing Family 1": "Adding a readme addon",
+            "Testing Family 2": "Adding a readme addon"
+        },
         "Playbook": {
             "Playbook Test 1": "Adding a readme addon",
             "Playbook Test 2": "Adding a readme addon",
