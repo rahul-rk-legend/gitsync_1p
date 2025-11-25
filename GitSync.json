@@ -15,7 +15,8 @@
         },
         "Connector": {},
         "Job": {
-            "projects/project/locations/location/instances/instance/integrations/GoogleChronicle/jobs/2/jobInstances/8": "Adding a readme addon"
+            "projects/project/locations/location/instances/instance/integrations/GoogleChronicle/jobs/2/jobInstances/8": "Adding a readme addon",
+            "projects/project/locations/location/instances/instance/integrations/MicrosoftGraphMailDelegated/jobs/9/jobInstances/10": "Adding a readme addon"
         }
     },
     "settings": {
