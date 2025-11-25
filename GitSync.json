@@ -4,7 +4,8 @@
         "Integration": {},
         "Mappings": {
             "GoogleChronicle": "Adding a readme addon",
-            "MicrosoftGraphMailDelegated,VirusTotalV3": "Adding a readme addon"
+            "MicrosoftGraphMailDelegated,VirusTotalV3": "Adding a readme addon",
+            "MicrosoftGraphMailDelegated": "Adding a readme addon"
         },
         "Visual Family": {},
         "Playbook": {
