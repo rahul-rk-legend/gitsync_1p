@@ -1,7 +1,10 @@
 {
     "system_version": "6.1.6.150",
     "readme_addons": {
-        "Integration": {},
+        "Integration": {
+            "Siemplify": "Adding a readme addon",
+            "MicrosoftGraphMailDelegated": "Adding a readme addon"
+        },
         "Mappings": {
             "GoogleChronicle": "Adding a readme addon",
             "MicrosoftGraphMailDelegated,VirusTotalV3": "Adding a readme addon",
