@@ -14,7 +14,9 @@
             "Playbook Test 3": "Adding a readme addon"
         },
         "Connector": {},
-        "Job": {}
+        "Job": {
+            "projects/project/locations/location/instances/instance/integrations/GoogleChronicle/jobs/2/jobInstances/8": "Adding a readme addon"
+        }
     },
     "settings": {
         "update_root_readme": true
