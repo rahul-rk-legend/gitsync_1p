@@ -1,5 +1,13 @@
 [
     {
+        "alias": "projects/project/locations/location/instances/instance/internalDomains/2",
+        "id": 2,
+        "domain": "Testing 2",
+        "environments": "[\"B\",\"C\",\"D\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    },
+    {
         "alias": "projects/project/locations/location/instances/instance/internalDomains/1",
         "id": 1,
         "domain": "Testing",

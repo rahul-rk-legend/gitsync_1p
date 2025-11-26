@@ -87,54 +87,6 @@ Python Version - 3
 
 
 ## Actions
-#### Download Attachments from Email
-Use the Download Attachments From Email action to download attachments from emails based on the criteria provided. This action doesn't run on Google SecOps entities. This action is asynchronous. Adjust the script timeout value in the Google SecOps IDE. The action replaces the “/” forward slash and “\”  backslash characters in the names of the downloaded attachments with the “_” underscore character.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Search In Mailbox|The default mailbox to execute the search operation in. If permissions allow it, the action can search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String|Default Mailbox|
-|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|False|String|None|
-|Download Destination|A location to save the downloaded attachments. By default, the action attempts to save the attachment to the Cloud Storage bucket. Saving an attachment to the local file system is a fallback option. The possible values are GCP Bucket and Local File System. The default value is GCP Bucket.|True|List|None|
-|Download Path|A path to download attachments to. When saving attachments to the Cloud Storage bucket or a local file system, the action expects you to specify the download path in the Unix-like format, such as"/tmp/test"|True|String|None|
-|Mail IDs|A filter condition to search for emails with specific email IDs or internetMessageId values. This parameter accepts a comma-separated list of email IDs to search for. If this parameter is provided, the search ignores the Subject Filter and Sender Filter parameters.|False|String|None|
-|Subject Filter|A filter condition that specifies the email subject to search for. This filter uses the contains logic.|False|String|None|
-|Sender Filter|A filter condition that specifies the sender of requested emails. This filter uses the equals logic.|False|String|None|
-|Download Attachments from EML|If selected, the action downloads attachments from EML files.|False|Boolean|None|
-|Download Attachments to unique path?|If selected, the action downloads attachments to the unique path provided in the Download Path parameter to avoid overwriting any previously downloaded attachments.|False|Boolean|None|
-|How many mailboxes to process in a single batch|The number of mailboxes to process in a single batch (a single connection to the Microsoft 365 server). The default value is 25.|False|String|None|
-
-
-
-##### JSON Results
-```json
-[{"attachment_name":"name1.png","downloaded_path":"file_path/name1.png"},{"attachment_name":"name2.png","downloaded_path":"file_path/name2.png"}]
-```
-
-
-
-#### Extract Data from Attached EML
-Use the Extract Data From Attached EML action to retrieve data from the email EML attachments and return it in the action results. This action supports the .eml, .msg, and .ics file formats. This action doesn't run on Google SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Search In Mailbox|The default mailbox to execute the search operation in. If permissions allow it, the action can search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String||
-|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|False|String||
-|Mail IDs|A filter condition to search for emails with specific email IDs or internetMessageId values. This parameter accepts a comma-separated list of email IDs to search for.|True|String||
-|Regex Map JSON|A JSON definition that contains regular expressions to apply to the attached email file and generate additional key values in the action JSON result. The example of this parameter value is as follows: {ips: \b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\b}|False|String|{}|
-
-
-
-##### JSON Results
-```json
-[{"type":"EML","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.eml"},{"type":"MSG","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.msg"},{"type":"ICS","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.ics"}]
-```
-
-
-
 #### Forward Email
 Use the Forward Email action to forward emails that include previous threads. With the appropriate permissions, this action can send emails from a mailbox different than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.
 Timeout - 600 Seconds
@@ -473,6 +425,54 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"Responses": [{"recipient": "recipient@example.com", "content": {"@odata.etag": "W/\"dummy_etag\"", "id": "dummy_id", "createdDateTime": "2024-01-01T12:00:00Z", "lastModifiedDateTime": "2024-01-01T12:00:01Z", "changeKey": "dummy_change_key", "categories": [], "receivedDateTime": "2024-01-01T12:00:00Z", "sentDateTime": "2024-01-01T12:00:00Z", "hasAttachments": false, "internetMessageId": "<dummy_message_id@example.com>", "subject": "Dummy Subject", "bodyPreview": "Dummy Body Preview", "importance": "normal", "parentFolderId": "dummy_folder_id", "conversationId": "dummy_conversation_id", "conversationIndex": "dummy_conversation_index", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": false, "isDraft": false, "webLink": "https://outlook.office365.com/owa/?ItemID=dummy_item_id&exvsurl=1&viewmodel=ReadMessageItem", "inferenceClassification": "focused", "internetMessageHeaders": [{"name": "Received", "value": "from dummy_server by dummy_server"}, {"name": "Authentication-Results", "value": "dummy_authentication_results"},  {"name": "From", "value": "\"Dummy Sender\" <dummy_sender@example.com>"}, {"name": "To", "value": "\"Dummy Recipient\" <dummy_recipient@example.com>"}, {"name": "Subject", "value": "Dummy Subject"}, {"name": "Thread-Topic", "value": "Dummy Thread Topic"}, {"name": "Thread-Index", "value": "dummy_thread_index"}, {"name": "Date", "value": "Mon, 01 Jan 2024 12:00:00 +0000"}, {"name": "Message-ID", "value": "<dummy_message_id@example.com>"}, {"name": "References", "value": "<dummy_reference_id@example.com>"}, {"name": "In-Reply-To", "value": "<dummy_in_reply_to_id@example.com>"}, {"name": "X-MS-Exchange-Organization-SCL", "value": "0"}, {"name": "X-MS-TNEF-Correlator", "value": "dummy_correlator"}, {"name": "MIME-Version", "value": "1.0"}], "body": {"contentType": "html", "content": "<html><body>Dummy Body</body></html>"}, "sender": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "from": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "toRecipients": [{"emailAddress": {"name": "Dummy Recipient", "address": "dummy_recipient@example.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "<html><body>Dummy Unique Body</body></html>"}, "flag": {"flagStatus": "notFlagged"}, "singleValueExtendedProperties": [{"id": "String 0x7d", "value": "Dummy Extended Property"}]}}]}
+```
+
+
+
+#### Download Attachments from Email
+Use the Download Attachments From Email action to download attachments from emails based on the criteria provided. This action doesn't run on Google SecOps entities. This action is asynchronous. Adjust the script timeout value in the Google SecOps IDE. The action replaces the “/” forward slash and “\”  backslash characters in the names of the downloaded attachments with the “_” underscore character.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|The default mailbox to execute the search operation in. If permissions allow it, the action can search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String|Default Mailbox|
+|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|False|String|None|
+|Download Destination|A location to save the downloaded attachments. By default, the action attempts to save the attachment to the Cloud Storage bucket. Saving an attachment to the local file system is a fallback option. The possible values are GCP Bucket and Local File System. The default value is GCP Bucket.|True|List|None|
+|Download Path|A path to download attachments to. When saving attachments to the Cloud Storage bucket or a local file system, the action expects you to specify the download path in the Unix-like format, such as"/tmp/test"|True|String|None|
+|Mail IDs|A filter condition to search for emails with specific email IDs or internetMessageId values. This parameter accepts a comma-separated list of email IDs to search for. If this parameter is provided, the search ignores the Subject Filter and Sender Filter parameters.|False|String|None|
+|Subject Filter|A filter condition that specifies the email subject to search for. This filter uses the contains logic.|False|String|None|
+|Sender Filter|A filter condition that specifies the sender of requested emails. This filter uses the equals logic.|False|String|None|
+|Download Attachments from EML|If selected, the action downloads attachments from EML files.|False|Boolean|None|
+|Download Attachments to unique path?|If selected, the action downloads attachments to the unique path provided in the Download Path parameter to avoid overwriting any previously downloaded attachments.|False|Boolean|None|
+|How many mailboxes to process in a single batch|The number of mailboxes to process in a single batch (a single connection to the Microsoft 365 server). The default value is 25.|False|String|None|
+
+
+
+##### JSON Results
+```json
+[{"attachment_name":"name1.png","downloaded_path":"file_path/name1.png"},{"attachment_name":"name2.png","downloaded_path":"file_path/name2.png"}]
+```
+
+
+
+#### Extract Data from Attached EML
+Use the Extract Data From Attached EML action to retrieve data from the email EML attachments and return it in the action results. This action supports the .eml, .msg, and .ics file formats. This action doesn't run on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|The default mailbox to execute the search operation in. If permissions allow it, the action can search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String||
+|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|False|String||
+|Mail IDs|A filter condition to search for emails with specific email IDs or internetMessageId values. This parameter accepts a comma-separated list of email IDs to search for.|True|String||
+|Regex Map JSON|A JSON definition that contains regular expressions to apply to the attached email file and generate additional key values in the action JSON result. The example of this parameter value is as follows: {ips: \b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\b}|False|String|{}|
+
+
+
+##### JSON Results
+```json
+[{"type":"EML","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.eml"},{"type":"MSG","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.msg"},{"type":"ICS","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.ics"}]
 ```
 
 

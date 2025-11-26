@@ -1,0 +1,11 @@
+[
+    {
+        "name": "projects/project/locations/location/instances/instance/emailTemplates/1",
+        "templateType": "Template",
+        "author": "94a13df3-32f1-4680-91ec-c5f7912d31b9",
+        "id": 1,
+        "content": "This is a testing template",
+        "displayName": "Testing ",
+        "environments": "[\"C\",\"A\",\"Default Environment\"]"
+    }
+]

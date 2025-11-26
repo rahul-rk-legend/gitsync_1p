@@ -1,5 +1,18 @@
 [
     {
+        "name": "projects/project/locations/location/instances/instance/slaDefinitions/5",
+        "id": 5,
+        "slaType": "CaseStage",
+        "slaTypeValue": "[\"Investigation\"]",
+        "slaPeriod": 6.0,
+        "slaPeriodTimeUnit": "Minutes",
+        "criticalSlaPeriod": 4.0,
+        "criticalSlaPeriodTimeUnit": "Minutes",
+        "environments": [
+            "D"
+        ]
+    },
+    {
         "name": "projects/project/locations/location/instances/instance/slaDefinitions/4",
         "id": 4,
         "slaType": "AlertPriority",

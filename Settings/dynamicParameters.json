@@ -1,5 +1,13 @@
 [
     {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/2",
+        "id": 2,
+        "displayName": "Dynamic Testing 1",
+        "parameterType": "List",
+        "defaultValue": "Testing 1",
+        "optionalValuesJson": "[\"Testing 1\"]"
+    },
+    {
         "name": "projects/project/locations/location/instances/instance/dynamicParameters/1",
         "id": 1,
         "displayName": "Testing Dynamic",

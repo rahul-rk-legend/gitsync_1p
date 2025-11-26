@@ -1,5 +1,11 @@
 [
     {
+        "name": "projects/project/locations/location/instances/instance/caseStageDefinitions/9",
+        "id": 9,
+        "displayName": "Bye Bye",
+        "order": 9
+    },
+    {
         "name": "projects/project/locations/location/instances/instance/caseStageDefinitions/8",
         "id": 8,
         "displayName": "Hello",

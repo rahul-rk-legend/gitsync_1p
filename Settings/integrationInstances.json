@@ -1,0 +1,367 @@
+[
+    {
+        "environment": "B",
+        "integrationIdentifier": "CrowdStrikeFalcon",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "CrowdStrikeFalcon_1",
+            "settings": [
+                {
+                    "propertyName": "API Root",
+                    "value": "https://api.crowdstrike.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": false,
+                    "id": 84,
+                    "propertyDisplayName": "API Root",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "da6d6fe5-0c07-4830-849b-581d45ff1902"
+                },
+                {
+                    "propertyName": "Client API ID",
+                    "value": "8afa11073d7a4fc69d42ef7ef7c9f34c",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 85,
+                    "propertyDisplayName": "Client API ID",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "da6d6fe5-0c07-4830-849b-581d45ff1902"
+                },
+                {
+                    "propertyName": "Client API Secret",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": true,
+                    "id": 86,
+                    "propertyDisplayName": "Client API Secret",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "da6d6fe5-0c07-4830-849b-581d45ff1902"
+                },
+                {
+                    "propertyName": "Verify SSL",
+                    "value": "False",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Boolean",
+                    "isMandatory": false,
+                    "id": 87,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "da6d6fe5-0c07-4830-849b-581d45ff1902"
+                },
+                {
+                    "propertyName": "Customer ID",
+                    "value": "",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": false,
+                    "id": 88,
+                    "propertyDisplayName": "Customer ID",
+                    "propertyDescription": "The customer ID of the tenant in which to execute the integration. For use in multi-tenant (MSSP) environments.",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "da6d6fe5-0c07-4830-849b-581d45ff1902"
+                }
+            ]
+        }
+    },
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "CrowdStrikeFalcon",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "propertyName": "API Root",
+                    "value": "https://api.crowdstrike.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": false,
+                    "id": 78,
+                    "propertyDisplayName": "API Root",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "bfe20186-000e-4a81-89c0-64e45f547edb"
+                },
+                {
+                    "propertyName": "Client API ID",
+                    "value": "8afa11073d7a4fc69d42ef7ef7c9f34c",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 79,
+                    "propertyDisplayName": "Client API ID",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "bfe20186-000e-4a81-89c0-64e45f547edb"
+                },
+                {
+                    "propertyName": "Client API Secret",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": true,
+                    "id": 80,
+                    "propertyDisplayName": "Client API Secret",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "bfe20186-000e-4a81-89c0-64e45f547edb"
+                },
+                {
+                    "propertyName": "Verify SSL",
+                    "value": "False",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Boolean",
+                    "isMandatory": false,
+                    "id": 81,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "bfe20186-000e-4a81-89c0-64e45f547edb"
+                },
+                {
+                    "propertyName": "Customer ID",
+                    "value": "",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": false,
+                    "id": 82,
+                    "propertyDisplayName": "Customer ID",
+                    "propertyDescription": "The customer ID of the tenant in which to execute the integration. For use in multi-tenant (MSSP) environments.",
+                    "integrationIdentifier": "CrowdStrikeFalcon",
+                    "integrationInstance": "bfe20186-000e-4a81-89c0-64e45f547edb"
+                }
+            ]
+        }
+    },
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "propertyName": "API Key",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": true,
+                    "id": 53,
+                    "propertyDisplayName": "API Key",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "VirusTotalV3",
+                    "integrationInstance": "b4e4a8a9-c214-42e4-9197-c0dabffc1b7b"
+                },
+                {
+                    "propertyName": "Verify SSL",
+                    "value": "False",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Boolean",
+                    "isMandatory": false,
+                    "id": 54,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "VirusTotalV3",
+                    "integrationInstance": "b4e4a8a9-c214-42e4-9197-c0dabffc1b7b"
+                }
+            ]
+        }
+    },
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "MicrosoftGraphMailDelegated",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "propertyName": "Microsoft Entra ID Endpoint",
+                    "value": "https://login.microsoftonline.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 14,
+                    "propertyDisplayName": "Microsoft Entra ID Endpoint",
+                    "propertyDescription": "The Microsoft Entra ID endpoint to connect to (formerly known as Azure AD). The value can be different for different tenant types.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Microsoft Graph Endpoint",
+                    "value": "https://graph.microsoft.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 15,
+                    "propertyDisplayName": "Microsoft Graph Endpoint",
+                    "propertyDescription": "The Microsoft Graph Endpoint to connect to. The value can be different for different tenant types.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Client ID",
+                    "value": "f994818c-540d-4813-8732-dfd434cdb6f1",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 16,
+                    "propertyDisplayName": "Client ID",
+                    "propertyDescription": "The client (application) ID of the Microsoft Entra application to use in the integration.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Client Secret Value",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": true,
+                    "id": 17,
+                    "propertyDisplayName": "Client Secret Value",
+                    "propertyDescription": "The client secret value of the Microsoft Entra app to use in the integration.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Microsoft Entra ID Directory ID",
+                    "value": "d48f52ca-5b1a-4708-8ed0-ebb98a26a46a",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 18,
+                    "propertyDisplayName": "Microsoft Entra ID Directory ID",
+                    "propertyDescription": "The Microsoft Entra ID (tenant ID) value.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "User Mailbox",
+                    "value": "labops1@siemplifycyarx.onmicrosoft.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": true,
+                    "id": 19,
+                    "propertyDisplayName": "User Mailbox",
+                    "propertyDescription": "The mailbox to use in the integration.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Refresh Token",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": true,
+                    "id": 20,
+                    "propertyDisplayName": "Refresh Token",
+                    "propertyDescription": "The refresh token that is used to authenticate.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Verify SSL",
+                    "value": "False",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Boolean",
+                    "isMandatory": false,
+                    "id": 21,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyDescription": "If selected, the integration verifies that the SSL certificate for the connection to the Microsoft Graph server is valid. Selected by default.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Mail Field Source",
+                    "value": "True",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Boolean",
+                    "isMandatory": false,
+                    "id": 22,
+                    "propertyDisplayName": "Mail Field Source",
+                    "propertyDescription": "If selected, the integration retrieves the mailbox address from the user details \"mail\" attribute. If not selected, the integration retrieves the mailbox address from the \"userPrincipalName\" field. Selected by default",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Base64 Encoded Private Key",
+                    "value": "",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": false,
+                    "id": 23,
+                    "propertyDisplayName": "Base64 Encoded Private Key",
+                    "propertyDescription": "Specify a base64 encoded private key that will be used to decrypt the email.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Base64 Encoded Certificate",
+                    "value": "",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": false,
+                    "id": 24,
+                    "propertyDisplayName": "Base64 Encoded Certificate",
+                    "propertyDescription": "Specify a base64 encoded certificate that will be used to decrypt the email.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Base64 Encoded CA certificate",
+                    "value": "",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "Password",
+                    "isMandatory": false,
+                    "id": 25,
+                    "propertyDisplayName": "Base64 Encoded CA certificate",
+                    "propertyDescription": "Specify a base64 encoded trusted CA certificate for signature verification.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                },
+                {
+                    "propertyName": "Redirect URL",
+                    "value": "http://localhost",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": "String",
+                    "isMandatory": false,
+                    "id": 26,
+                    "propertyDisplayName": "Redirect URL",
+                    "propertyDescription": "The Redirect URL that you configured when you created your Microsoft Entra ID application.",
+                    "integrationIdentifier": "MicrosoftGraphMailDelegated",
+                    "integrationInstance": "57d24954-1f21-4938-933e-2d3628ffa8ea"
+                }
+            ]
+        }
+    }
+]
