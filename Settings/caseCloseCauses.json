@@ -1,5 +1,11 @@
 [
     {
+        "name": "projects/project/locations/location/instances/instance/caseCloseDefinitions/28",
+        "id": 28,
+        "rootCause": "Testing",
+        "closeReason": "Maintenance"
+    },
+    {
         "name": "projects/project/locations/location/instances/instance/caseCloseDefinitions/27",
         "id": 27,
         "rootCause": "No clear conclusion",
