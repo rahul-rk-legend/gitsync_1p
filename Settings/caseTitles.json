@@ -12,7 +12,7 @@
         "order": 3
     },
     {
-        "value": "[Alert.Name]",
+        "value": "[Alert.Rule]",
         "order": 4
     },
     {
