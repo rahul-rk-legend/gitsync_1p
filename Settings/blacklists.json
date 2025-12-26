@@ -1,0 +1,81 @@
+{
+    "soar_block_entities": [
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/3",
+            "id": 3,
+            "entityIdentifier": "Testing Podman 1P 3",
+            "entityType": "CVE",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"Default Environment\",\"D\",\"B\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/2",
+            "id": 2,
+            "entityIdentifier": "Testing Podman 1P 2",
+            "entityType": "*",
+            "action": "DoNotCreateEntity",
+            "environmentsJson": "[\"*\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/1",
+            "id": 1,
+            "entityIdentifier": "Testing Podman 1P 1",
+            "entityType": "POD",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"B\",\"C\",\"D\"]"
+        }
+    ],
+    "items": [
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/3",
+            "id": 3,
+            "entityIdentifier": "Testing Podman 1P 3",
+            "entityType": "CVE",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"Default Environment\",\"D\",\"B\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/2",
+            "id": 2,
+            "entityIdentifier": "Testing Podman 1P 2",
+            "entityType": "*",
+            "action": "DoNotCreateEntity",
+            "environmentsJson": "[\"*\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/1",
+            "id": 1,
+            "entityIdentifier": "Testing Podman 1P 1",
+            "entityType": "POD",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"B\",\"C\",\"D\"]"
+        }
+    ],
+    "soarBlockEntities": [
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/3",
+            "id": 3,
+            "entityIdentifier": "Testing Podman 1P 3",
+            "entityType": "CVE",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"Default Environment\",\"D\",\"B\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/2",
+            "id": 2,
+            "entityIdentifier": "Testing Podman 1P 2",
+            "entityType": "*",
+            "action": "DoNotCreateEntity",
+            "environmentsJson": "[\"*\"]"
+        },
+        {
+            "name": "projects/project/locations/location/instances/instance/entitiesBlocklists/1",
+            "id": 1,
+            "entityIdentifier": "Testing Podman 1P 1",
+            "entityType": "POD",
+            "action": "DoNotGroupAlerts",
+            "environmentsJson": "[\"B\",\"C\",\"D\"]"
+        }
+    ],
+    "totalSize": 3
+}
