@@ -1,19 +1,12 @@
 [
     {
-        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/4",
-        "id": 4,
-        "displayName": "CrowdStrike",
-        "matchCriteria": "DataDriven",
-        "comparisonType": "Exact",
-        "priority": 1,
-        "canBeCaseTitle": false
-    },
-    {
         "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/3",
         "id": 3,
-        "displayName": "Simulated Case",
-        "matchCriteria": "DataDriven",
-        "comparisonType": "Exact",
+        "displayName": "Testing Latest Legacy 1",
+        "matchCriteria": "ByVendor",
+        "value": "Windows:AccessDisabledAccounts",
+        "propertyName": "",
+        "comparisonType": "Contain",
         "priority": 1,
         "canBeCaseTitle": false
     },
