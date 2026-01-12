@@ -1,19 +1,39 @@
 [
     {
-        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/9",
-        "id": 9,
-        "displayName": "Testing 1P 4",
-        "matchCriteria": "ByRuleGenerator",
-        "value": "Testing",
+        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/7",
+        "id": 7,
+        "displayName": "Testing IP 5",
+        "matchCriteria": "DataDriven",
+        "comparisonType": "Exact",
+        "priority": 1,
+        "canBeCaseTitle": false
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/6",
+        "id": 6,
+        "displayName": "Testing IP 1",
+        "matchCriteria": "ByVendor",
+        "value": "Windows:AccessDisabledAccounts",
         "propertyName": "",
         "comparisonType": "Contain",
         "priority": 1,
         "canBeCaseTitle": false
     },
     {
-        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/7",
-        "id": 7,
-        "displayName": "Testing 1P 3",
+        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/5",
+        "id": 5,
+        "displayName": "Testing IP 2",
+        "matchCriteria": "ByProduct",
+        "value": "Phishing email detector",
+        "propertyName": "",
+        "comparisonType": "Contain",
+        "priority": 2,
+        "canBeCaseTitle": true
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/4",
+        "id": 4,
+        "displayName": "Testing IP 3",
         "matchCriteria": "ByEntityPropertyName",
         "value": "Windows:AccessDisabledAccounts",
         "propertyName": "Alert_Id",
@@ -22,26 +42,15 @@
         "canBeCaseTitle": false
     },
     {
-        "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/5",
-        "id": 5,
-        "displayName": "Testing 1P 2",
-        "matchCriteria": "ByProduct",
-        "value": "Phishing email detector",
-        "propertyName": "",
-        "comparisonType": "Contain",
-        "priority": 2,
-        "canBeCaseTitle": false
-    },
-    {
         "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/3",
         "id": 3,
-        "displayName": "Testing 1P 1",
-        "matchCriteria": "ByVendor",
-        "value": "Windows:AccessDisabledAccounts",
+        "displayName": "Testing IP 4",
+        "matchCriteria": "ByRuleGenerator",
+        "value": "Testing",
         "propertyName": "",
         "comparisonType": "Contain",
         "priority": 1,
-        "canBeCaseTitle": false
+        "canBeCaseTitle": true
     },
     {
         "name": "projects/project/locations/location/instances/instance/caseTagDefinitions/1",
